@@ -61,6 +61,8 @@
             this.lblSubtotal = new System.Windows.Forms.Label();
             this.btnCheckOut = new System.Windows.Forms.Button();
             this.lblStoreLocation = new System.Windows.Forms.Label();
+            this.radCashMethod = new System.Windows.Forms.RadioButton();
+            this.radDebitMethod = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.nudPizzaSizeChosen)).BeginInit();
             this.mnuMainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudToppingNumberChosen)).BeginInit();
@@ -425,11 +427,37 @@
             this.lblStoreLocation.TabIndex = 26;
             this.lblStoreLocation.Text = "Store Location: Ottawa";
             // 
+            // radCashMethod
+            // 
+            this.radCashMethod.AutoSize = true;
+            this.radCashMethod.Location = new System.Drawing.Point(937, 88);
+            this.radCashMethod.Name = "radCashMethod";
+            this.radCashMethod.Size = new System.Drawing.Size(84, 17);
+            this.radCashMethod.TabIndex = 27;
+            this.radCashMethod.TabStop = true;
+            this.radCashMethod.Text = "Pay by Cash";
+            this.radCashMethod.UseVisualStyleBackColor = true;
+            this.radCashMethod.Click += new System.EventHandler(this.radCashMethod_Click);
+            // 
+            // radDebitMethod
+            // 
+            this.radDebitMethod.AutoSize = true;
+            this.radDebitMethod.Location = new System.Drawing.Point(937, 110);
+            this.radDebitMethod.Name = "radDebitMethod";
+            this.radDebitMethod.Size = new System.Drawing.Size(85, 17);
+            this.radDebitMethod.TabIndex = 28;
+            this.radDebitMethod.TabStop = true;
+            this.radDebitMethod.Text = "Pay by Debit";
+            this.radDebitMethod.UseVisualStyleBackColor = true;
+            this.radDebitMethod.Click += new System.EventHandler(this.radDebitMethod_Click);
+            // 
             // frmPizzaOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1175, 650);
+            this.Controls.Add(this.radDebitMethod);
+            this.Controls.Add(this.radCashMethod);
             this.Controls.Add(this.lblStoreLocation);
             this.Controls.Add(this.btnCheckOut);
             this.Controls.Add(this.grbReceipt);
@@ -506,6 +534,8 @@
         private System.Windows.Forms.Label lblSubtotal;
         private System.Windows.Forms.Button btnCheckOut;
         private System.Windows.Forms.Label lblStoreLocation;
+        private System.Windows.Forms.RadioButton radCashMethod;
+        private System.Windows.Forms.RadioButton radDebitMethod;
     }
 }
 

@@ -117,22 +117,54 @@ namespace PizzaOrderThomasA
             // Calculate Total
             Total = Subtotal + HSTCost;
 
-            // Display Receipt includig Subtotal, HST, and total
-            lblSubtotal.Text = "Subtotal = " + String.Format("${0:0.00}", Subtotal);
-            lblHST.Text = "HST = " + String.Format("${0:0.00}", HSTCost);
-            lblTotal.Text = "Total = " + String.Format("${0:0.00}", Total);
+            // If no payment method is found, inform the user and do not tell them their pizza cost. If one is, tell the user the pizza cost
+            if (radCashMethod.Checked == true)
+            {
+                // Display Receipt includig Subtotal, HST, and total
+                lblSubtotal.Text = "Subtotal = " + String.Format("${0:0.00}", Subtotal);
+                lblHST.Text = "HST = " + String.Format("${0:0.00}", HSTCost);
+                lblTotal.Text = "Total = " + String.Format("${0:0.00}", Total);
+            }
+            else if (radDebitMethod.Checked == true)
+            {
+                // Display Receipt includig Subtotal, HST, and total
+                lblSubtotal.Text = "Subtotal = " + String.Format("${0:0.00}", Subtotal);
+                lblHST.Text = "HST = " + String.Format("${0:0.00}", HSTCost);
+                lblTotal.Text = "Total = " + String.Format("${0:0.00}", Total);
+            }
+            else
+            {
+                // Ask the user to
+                MessageBox.Show("Please select a method to pay");
+            }
         }
 
         private void mniOttawaStore_Click(object sender, EventArgs e)
         {
+            // Set Ottawa HST cost and change font to tell user
             CityHST = OTTAWA_HST;
             lblStoreLocation.Text = "Store Location: Ottawa";
         }
 
         private void mniNewfoundlandStore_Click(object sender, EventArgs e)
-        {
+        {   
+            // Set Newfoundland HST cost and change font to tell user
             CityHST = NEWFOUNDLAND_HST;
             lblStoreLocation.Text = "Store Location: Newfoundland";
+        }
+
+        private void radCashMethod_Click(object sender, EventArgs e)
+        {   
+            // If cash method clicked, enable self, and disable debit
+            radCashMethod.Checked = true;
+            radDebitMethod.Checked = false;
+        }
+
+        private void radDebitMethod_Click(object sender, EventArgs e)
+        {   
+            // If debit method clicked, enable self, and disable cash
+            radDebitMethod.Checked = true;
+            radCashMethod.Checked = false;
         }
     }
 }
