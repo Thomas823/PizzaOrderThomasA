@@ -7,3 +7,12 @@ C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThom
 C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.csproj.CoreCompileInputs.cache
 C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.exe
 C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.pdb
+C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\bin\Debug\PizzaOrderThomasA.exe.config
+C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\bin\Debug\PizzaOrderThomasA.exe
+C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\bin\Debug\PizzaOrderThomasA.pdb
+C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.csprojResolveAssemblyReference.cache
+C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.frmPizzaOrder.resources
+C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.Properties.Resources.resources
+C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.csproj.GenerateResource.Cache
+C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.exe
+C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.pdb

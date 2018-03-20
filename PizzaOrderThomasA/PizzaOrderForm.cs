@@ -16,5 +16,10 @@ namespace PizzaOrderThomasA
         {
             InitializeComponent();
         }
+
+        private void mniExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
