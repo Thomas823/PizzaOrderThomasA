@@ -30,7 +30,7 @@
         {
             this.lblGreeting = new System.Windows.Forms.Label();
             this.lblPizzaSizePrompt = new System.Windows.Forms.Label();
-            this.nubPizzaSizeChosen = new System.Windows.Forms.NumericUpDown();
+            this.nudPizzaSizeChosen = new System.Windows.Forms.NumericUpDown();
             this.lblLargePizzaNumber = new System.Windows.Forms.Label();
             this.ExtraLargePizzaNumber = new System.Windows.Forms.Label();
             this.lblExtraExtraLargePizzaNumber = new System.Windows.Forms.Label();
@@ -50,17 +50,23 @@
             this.mniStoreLocation = new System.Windows.Forms.ToolStripMenuItem();
             this.mniOttawaStore = new System.Windows.Forms.ToolStripMenuItem();
             this.mniNewfoundlandStore = new System.Windows.Forms.ToolStripMenuItem();
-            this.nubToppingNumberChosen = new System.Windows.Forms.NumericUpDown();
-            this.nubDrinkAmountChosen = new System.Windows.Forms.NumericUpDown();
-            this.nubDeliveryOptionChosen = new System.Windows.Forms.NumericUpDown();
+            this.nudToppingNumberChosen = new System.Windows.Forms.NumericUpDown();
+            this.nudDrinkAmountChosen = new System.Windows.Forms.NumericUpDown();
+            this.nudDeliveryOptionChosen = new System.Windows.Forms.NumericUpDown();
             this.lblTrueDeliveryNumber = new System.Windows.Forms.Label();
             this.lblFalseDeliveryNumber = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.nubPizzaSizeChosen)).BeginInit();
+            this.grbReceipt = new System.Windows.Forms.GroupBox();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblHST = new System.Windows.Forms.Label();
+            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.btnCheckOut = new System.Windows.Forms.Button();
+            this.lblStoreLocation = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPizzaSizeChosen)).BeginInit();
             this.mnuMainMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nubToppingNumberChosen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nubDrinkAmountChosen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nubDeliveryOptionChosen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudToppingNumberChosen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDrinkAmountChosen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDeliveryOptionChosen)).BeginInit();
+            this.grbReceipt.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblGreeting
@@ -83,25 +89,25 @@
             this.lblPizzaSizePrompt.TabIndex = 1;
             this.lblPizzaSizePrompt.Text = "Select the size of pizza you would like:";
             // 
-            // nubPizzaSizeChosen
+            // nudPizzaSizeChosen
             // 
-            this.nubPizzaSizeChosen.Location = new System.Drawing.Point(589, 125);
-            this.nubPizzaSizeChosen.Maximum = new decimal(new int[] {
+            this.nudPizzaSizeChosen.Location = new System.Drawing.Point(589, 125);
+            this.nudPizzaSizeChosen.Maximum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.nubPizzaSizeChosen.Minimum = new decimal(new int[] {
+            this.nudPizzaSizeChosen.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.nubPizzaSizeChosen.Name = "nubPizzaSizeChosen";
-            this.nubPizzaSizeChosen.ReadOnly = true;
-            this.nubPizzaSizeChosen.Size = new System.Drawing.Size(41, 20);
-            this.nubPizzaSizeChosen.TabIndex = 2;
-            this.nubPizzaSizeChosen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.nubPizzaSizeChosen.Value = new decimal(new int[] {
+            this.nudPizzaSizeChosen.Name = "nudPizzaSizeChosen";
+            this.nudPizzaSizeChosen.ReadOnly = true;
+            this.nudPizzaSizeChosen.Size = new System.Drawing.Size(41, 20);
+            this.nudPizzaSizeChosen.TabIndex = 2;
+            this.nudPizzaSizeChosen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudPizzaSizeChosen.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -258,7 +264,7 @@
             // mniExit
             // 
             this.mniExit.Name = "mniExit";
-            this.mniExit.Size = new System.Drawing.Size(152, 22);
+            this.mniExit.Size = new System.Drawing.Size(92, 22);
             this.mniExit.Text = "Exit";
             this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
             // 
@@ -276,64 +282,66 @@
             this.mniOttawaStore.Name = "mniOttawaStore";
             this.mniOttawaStore.Size = new System.Drawing.Size(153, 22);
             this.mniOttawaStore.Text = "Ottawa";
+            this.mniOttawaStore.Click += new System.EventHandler(this.mniOttawaStore_Click);
             // 
             // mniNewfoundlandStore
             // 
             this.mniNewfoundlandStore.Name = "mniNewfoundlandStore";
             this.mniNewfoundlandStore.Size = new System.Drawing.Size(153, 22);
             this.mniNewfoundlandStore.Text = "Newfoundland";
+            this.mniNewfoundlandStore.Click += new System.EventHandler(this.mniNewfoundlandStore_Click);
             // 
-            // nubToppingNumberChosen
+            // nudToppingNumberChosen
             // 
-            this.nubToppingNumberChosen.Location = new System.Drawing.Point(589, 262);
-            this.nubToppingNumberChosen.Maximum = new decimal(new int[] {
+            this.nudToppingNumberChosen.Location = new System.Drawing.Point(589, 262);
+            this.nudToppingNumberChosen.Maximum = new decimal(new int[] {
             4,
             0,
             0,
             0});
-            this.nubToppingNumberChosen.Minimum = new decimal(new int[] {
+            this.nudToppingNumberChosen.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.nubToppingNumberChosen.Name = "nubToppingNumberChosen";
-            this.nubToppingNumberChosen.ReadOnly = true;
-            this.nubToppingNumberChosen.Size = new System.Drawing.Size(41, 20);
-            this.nubToppingNumberChosen.TabIndex = 17;
-            this.nubToppingNumberChosen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.nubToppingNumberChosen.Value = new decimal(new int[] {
+            this.nudToppingNumberChosen.Name = "nudToppingNumberChosen";
+            this.nudToppingNumberChosen.ReadOnly = true;
+            this.nudToppingNumberChosen.Size = new System.Drawing.Size(41, 20);
+            this.nudToppingNumberChosen.TabIndex = 17;
+            this.nudToppingNumberChosen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudToppingNumberChosen.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // nubDrinkAmountChosen
+            // nudDrinkAmountChosen
             // 
-            this.nubDrinkAmountChosen.Location = new System.Drawing.Point(589, 405);
-            this.nubDrinkAmountChosen.Maximum = new decimal(new int[] {
+            this.nudDrinkAmountChosen.Location = new System.Drawing.Point(589, 405);
+            this.nudDrinkAmountChosen.Maximum = new decimal(new int[] {
             2,
             0,
             0,
             0});
-            this.nubDrinkAmountChosen.Name = "nubDrinkAmountChosen";
-            this.nubDrinkAmountChosen.ReadOnly = true;
-            this.nubDrinkAmountChosen.Size = new System.Drawing.Size(41, 20);
-            this.nubDrinkAmountChosen.TabIndex = 18;
-            this.nubDrinkAmountChosen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudDrinkAmountChosen.Name = "nudDrinkAmountChosen";
+            this.nudDrinkAmountChosen.ReadOnly = true;
+            this.nudDrinkAmountChosen.Size = new System.Drawing.Size(41, 20);
+            this.nudDrinkAmountChosen.TabIndex = 18;
+            this.nudDrinkAmountChosen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // nubDeliveryOptionChosen
+            // nudDeliveryOptionChosen
             // 
-            this.nubDeliveryOptionChosen.Location = new System.Drawing.Point(589, 533);
-            this.nubDeliveryOptionChosen.Maximum = new decimal(new int[] {
+            this.nudDeliveryOptionChosen.Location = new System.Drawing.Point(589, 533);
+            this.nudDeliveryOptionChosen.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.nubDeliveryOptionChosen.Name = "nubDeliveryOptionChosen";
-            this.nubDeliveryOptionChosen.ReadOnly = true;
-            this.nubDeliveryOptionChosen.Size = new System.Drawing.Size(41, 20);
-            this.nubDeliveryOptionChosen.TabIndex = 19;
-            this.nubDeliveryOptionChosen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudDeliveryOptionChosen.Name = "nudDeliveryOptionChosen";
+            this.nudDeliveryOptionChosen.ReadOnly = true;
+            this.nudDeliveryOptionChosen.Size = new System.Drawing.Size(41, 20);
+            this.nudDeliveryOptionChosen.TabIndex = 19;
+            this.nudDeliveryOptionChosen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblTrueDeliveryNumber
             // 
@@ -355,26 +363,81 @@
             this.lblFalseDeliveryNumber.TabIndex = 22;
             this.lblFalseDeliveryNumber.Text = "Without Delivery = 0";
             // 
-            // groupBox1
+            // grbReceipt
             // 
-            this.groupBox1.Location = new System.Drawing.Point(817, 181);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(337, 329);
-            this.groupBox1.TabIndex = 23;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.grbReceipt.Controls.Add(this.lblTotal);
+            this.grbReceipt.Controls.Add(this.lblHST);
+            this.grbReceipt.Controls.Add(this.lblSubtotal);
+            this.grbReceipt.Location = new System.Drawing.Point(805, 251);
+            this.grbReceipt.Name = "grbReceipt";
+            this.grbReceipt.Size = new System.Drawing.Size(337, 329);
+            this.grbReceipt.TabIndex = 23;
+            this.grbReceipt.TabStop = false;
+            this.grbReceipt.Text = "Receipt";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(112, 212);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(130, 28);
+            this.lblTotal.TabIndex = 26;
+            this.lblTotal.Text = "Total = $0.00";
+            // 
+            // lblHST
+            // 
+            this.lblHST.AutoSize = true;
+            this.lblHST.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHST.Location = new System.Drawing.Point(128, 126);
+            this.lblHST.Name = "lblHST";
+            this.lblHST.Size = new System.Drawing.Size(91, 20);
+            this.lblHST.TabIndex = 25;
+            this.lblHST.Text = "HST = $0.00";
+            // 
+            // lblSubtotal
+            // 
+            this.lblSubtotal.AutoSize = true;
+            this.lblSubtotal.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtotal.Location = new System.Drawing.Point(113, 89);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(117, 20);
+            this.lblSubtotal.TabIndex = 24;
+            this.lblSubtotal.Text = "Subtotal = $0.00";
+            // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.Font = new System.Drawing.Font("Segoe Print", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.Location = new System.Drawing.Point(904, 172);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(161, 53);
+            this.btnCheckOut.TabIndex = 25;
+            this.btnCheckOut.Text = "Check Out";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
+            // 
+            // lblStoreLocation
+            // 
+            this.lblStoreLocation.AutoSize = true;
+            this.lblStoreLocation.Location = new System.Drawing.Point(965, 9);
+            this.lblStoreLocation.Name = "lblStoreLocation";
+            this.lblStoreLocation.Size = new System.Drawing.Size(116, 13);
+            this.lblStoreLocation.TabIndex = 26;
+            this.lblStoreLocation.Text = "Store Location: Ottawa";
             // 
             // frmPizzaOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1175, 772);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(1175, 650);
+            this.Controls.Add(this.lblStoreLocation);
+            this.Controls.Add(this.btnCheckOut);
+            this.Controls.Add(this.grbReceipt);
             this.Controls.Add(this.lblFalseDeliveryNumber);
             this.Controls.Add(this.lblTrueDeliveryNumber);
-            this.Controls.Add(this.nubDeliveryOptionChosen);
-            this.Controls.Add(this.nubDrinkAmountChosen);
-            this.Controls.Add(this.nubToppingNumberChosen);
+            this.Controls.Add(this.nudDeliveryOptionChosen);
+            this.Controls.Add(this.nudDrinkAmountChosen);
+            this.Controls.Add(this.nudToppingNumberChosen);
             this.Controls.Add(this.lblDeliveryOptionPrompt);
             this.Controls.Add(this.lblTwoDrinkNumber);
             this.Controls.Add(this.lblOneDrinkNumber);
@@ -388,19 +451,21 @@
             this.Controls.Add(this.lblExtraExtraLargePizzaNumber);
             this.Controls.Add(this.ExtraLargePizzaNumber);
             this.Controls.Add(this.lblLargePizzaNumber);
-            this.Controls.Add(this.nubPizzaSizeChosen);
+            this.Controls.Add(this.nudPizzaSizeChosen);
             this.Controls.Add(this.lblPizzaSizePrompt);
             this.Controls.Add(this.lblGreeting);
             this.Controls.Add(this.mnuMainMenu);
             this.MainMenuStrip = this.mnuMainMenu;
             this.Name = "frmPizzaOrder";
             this.Text = "Pizza Order By Thomas Aubin";
-            ((System.ComponentModel.ISupportInitialize)(this.nubPizzaSizeChosen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPizzaSizeChosen)).EndInit();
             this.mnuMainMenu.ResumeLayout(false);
             this.mnuMainMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nubToppingNumberChosen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nubDrinkAmountChosen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nubDeliveryOptionChosen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudToppingNumberChosen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDrinkAmountChosen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDeliveryOptionChosen)).EndInit();
+            this.grbReceipt.ResumeLayout(false);
+            this.grbReceipt.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,7 +475,7 @@
 
         private System.Windows.Forms.Label lblGreeting;
         private System.Windows.Forms.Label lblPizzaSizePrompt;
-        private System.Windows.Forms.NumericUpDown nubPizzaSizeChosen;
+        private System.Windows.Forms.NumericUpDown nudPizzaSizeChosen;
         private System.Windows.Forms.Label lblLargePizzaNumber;
         private System.Windows.Forms.Label ExtraLargePizzaNumber;
         private System.Windows.Forms.Label lblExtraExtraLargePizzaNumber;
@@ -430,12 +495,17 @@
         private System.Windows.Forms.ToolStripMenuItem mniStoreLocation;
         private System.Windows.Forms.ToolStripMenuItem mniOttawaStore;
         private System.Windows.Forms.ToolStripMenuItem mniNewfoundlandStore;
-        private System.Windows.Forms.NumericUpDown nubToppingNumberChosen;
-        private System.Windows.Forms.NumericUpDown nubDrinkAmountChosen;
-        private System.Windows.Forms.NumericUpDown nubDeliveryOptionChosen;
+        private System.Windows.Forms.NumericUpDown nudToppingNumberChosen;
+        private System.Windows.Forms.NumericUpDown nudDrinkAmountChosen;
+        private System.Windows.Forms.NumericUpDown nudDeliveryOptionChosen;
         private System.Windows.Forms.Label lblTrueDeliveryNumber;
         private System.Windows.Forms.Label lblFalseDeliveryNumber;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grbReceipt;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblHST;
+        private System.Windows.Forms.Label lblSubtotal;
+        private System.Windows.Forms.Button btnCheckOut;
+        private System.Windows.Forms.Label lblStoreLocation;
     }
 }
 

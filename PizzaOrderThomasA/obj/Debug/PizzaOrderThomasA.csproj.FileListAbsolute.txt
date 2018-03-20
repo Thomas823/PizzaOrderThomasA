@@ -16,3 +16,12 @@ C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\obj\Deb
 C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.csproj.GenerateResource.Cache
 C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.exe
 C:\Users\s405546\Desktop\Programming\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.pdb
+N:\StuShare\Semester 2 - Winter 2018\ICS3U Programming\Aubin, Thomas (s405546)\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\bin\Debug\PizzaOrderThomasA.exe.config
+N:\StuShare\Semester 2 - Winter 2018\ICS3U Programming\Aubin, Thomas (s405546)\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\bin\Debug\PizzaOrderThomasA.exe
+N:\StuShare\Semester 2 - Winter 2018\ICS3U Programming\Aubin, Thomas (s405546)\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\bin\Debug\PizzaOrderThomasA.pdb
+N:\StuShare\Semester 2 - Winter 2018\ICS3U Programming\Aubin, Thomas (s405546)\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.csprojResolveAssemblyReference.cache
+N:\StuShare\Semester 2 - Winter 2018\ICS3U Programming\Aubin, Thomas (s405546)\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.frmPizzaOrder.resources
+N:\StuShare\Semester 2 - Winter 2018\ICS3U Programming\Aubin, Thomas (s405546)\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.Properties.Resources.resources
+N:\StuShare\Semester 2 - Winter 2018\ICS3U Programming\Aubin, Thomas (s405546)\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.csproj.GenerateResource.Cache
+N:\StuShare\Semester 2 - Winter 2018\ICS3U Programming\Aubin, Thomas (s405546)\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.exe
+N:\StuShare\Semester 2 - Winter 2018\ICS3U Programming\Aubin, Thomas (s405546)\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.pdb
