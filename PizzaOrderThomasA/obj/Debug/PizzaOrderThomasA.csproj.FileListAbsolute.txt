@@ -1,0 +1,9 @@
+C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\bin\Debug\PizzaOrderThomasA.exe.config
+C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\bin\Debug\PizzaOrderThomasA.exe
+C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\bin\Debug\PizzaOrderThomasA.pdb
+C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.frmPizzaOrder.resources
+C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.Properties.Resources.resources
+C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.csproj.GenerateResource.Cache
+C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.csproj.CoreCompileInputs.cache
+C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.exe
+C:\Users\Thomas\Desktop\Programming\Assignments\PizzaOrderThomasA\PizzaOrderThomasA\obj\Debug\PizzaOrderThomasA.pdb
